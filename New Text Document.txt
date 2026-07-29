@@ -74,4 +74,6 @@ Best for: Agile teams practicing Continuous Integration (CI).
 
 2. Merging Strategies
 
-A merge combines changes from one branch in
+A merge combines changes from one branch in   
+
+Author - siva prasad
