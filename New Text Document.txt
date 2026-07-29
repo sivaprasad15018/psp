@@ -1,0 +1,77 @@
+branching and merging stratagies
+
+Branching and Merging Strategies are techniques used in version control systems like Git to help teams develop software efficiently while avoiding conflicts.
+
+1. Branching Strategies
+
+A branch is an independent line of development. It allows developers to work on features, bug fixes, or experiments without affecting the main codebase.
+
+a) Main (or Trunk) Branch
+Contains stable, production-ready code.
+Direct commits are usually restricted.
+
+Example:
+
+main
+ ───●──●──●──
+b) Feature Branch
+Created for developing a new feature.
+Merged back into the main branch after completion.
+
+Example:
+
+main
+ ───●────────●──
+      \
+feature ─●──●
+
+Advantages:
+
+Isolates new features.
+Easier code reviews.
+Reduces risk of breaking the main branch.
+c) Release Branch
+Created when preparing a software release.
+Only bug fixes and documentation updates are allowed.
+
+Advantages:
+
+Development of new features can continue on other branches.
+Stabilizes the upcoming release.
+d) Hotfix Branch
+Created from the main branch to fix critical production bugs.
+Merged back into both the main and development branches.
+
+Advantages:
+
+Enables quick production fixes.
+Minimizes downtime.
+e) Git Flow Strategy
+
+Uses several branch types:
+
+main – Production-ready code
+develop – Integration branch
+feature – New features
+release – Release preparation
+hotfix – Emergency bug fixes
+
+Best for: Large projects with scheduled releases.
+
+f) GitHub Flow
+Only one main branch.
+Create a feature branch.
+Open a Pull Request (PR).
+Review, test, and merge.
+
+Best for: Continuous deployment and web applications.
+
+g) Trunk-Based Development
+Developers work with short-lived branches or directly on the main branch.
+Frequent integration into the main branch.
+
+Best for: Agile teams practicing Continuous Integration (CI).
+
+2. Merging Strategies
+
+A merge combines changes from one branch in
